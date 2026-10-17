@@ -1,0 +1,72 @@
+/* Общие стили для страницы */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Поле ввода пароля */
+input[type="password"] {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  width: 220px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+/* Эффект при клике на поле ввода */
+input[type="password"]:focus {
+  border-color: #007BFF;
+}
+
+/* Кнопка */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 254px;
+}
+
+/* Эффект при наведении на кнопку */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Текст для вывода результата */
+#result {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+#result.success {
+  color: #28a745;
+  font-weight: bold;
+}
+
+
+#result.error {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+
+#result.loading {
+  color: #6c757d;
+  font-style: italic;
+}
